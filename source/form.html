@@ -8,42 +8,45 @@
 
 <body class="page-body">
   <div class="page-body__wrapper">
-    <header class="page-body__header main-header">
+    <header class="main-header">
       <a class="main-header__logo" href="index.html">
         <img class="main-header__logo-img" src="img/logo-sedona.svg" width="185" height="96" alt="Логотип Седоны.">
       </a>
-      <nav class="main-header__navigation main-navigation">
-        <button class="main-navigation__toggle" type="button">
+      <nav class="main-header__nav main-nav">
+        <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <ul class="main-navigation__list">
-          <li class="main-navigation__item">
-            <a class="main-navigation__link" href="index.html">Главная</a>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="index.html">Главная</a>
           </li>
-          <li class="main-navigation__item">
-            <a class="main-navigation__link" href="catalog.html">Фото и видео</a>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="catalog.html">Фото и видео</a>
           </li>
-          <li class="main-navigation__item">
-            <span class="main-navigation__link main-navigation__link--current">Форма отзыва</span>
+          <li class="main-nav__item">
+            <span class="main-nav__link main-nav__link--current">Форма отзыва</span>
           </li>
-          <li class="main-navigation__item">
-            <a class="main-navigation__link" href="https://htmlacademy.ru">HTMLAcademy</a>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="https://htmlacademy.ru">HTMLAcademy</a>
           </li>
         </ul>
       </nav>
     </header>
-    <main class="page-body__main-container">
+    <main class="page-body__main">
       <h1 class="visually-hidden">Форма отзыва</h1>
-      <div class="intro intro--size-s">
-        <img class="intro__caption" src="img/text-intro-size-s.svg" width="229" height="39"
-          alt="Добро пожаловать в Седону.">
-      </div>
-      <section class="review">
-        <div class="review__headline headline">
-          <h2 class="headline__title">Оставьте свой отзыв</h2>
-          <p class="headline__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных
+      <section class="intro">
+        <div class="intro__img-wrapper intro__img-wrapper--size-s">
+          <img class="intro__img" src="img/text-intro-size-s.svg" width="229" height="39"
+            alt="Добро пожаловать в Седону.">
+        </div>
+        <div class="intro__info">
+          <h2 class="intro__title">Оставьте свой отзыв</h2>
+          <p class="intro__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных
             вами достопримечательностях</p>
         </div>
+      </section>
+      <section class="review">
+        <h2 class="visually-hidden">Форма отзыва</h2>
         <form class="review__form review-form" action="https://echo.htmlacademy.ru/" method="get">
           <div class="review-form__user-info">
             <fieldset class="review-form__group">
@@ -156,7 +159,7 @@
         </form>
       </section>
     </main>
-    <footer class="page-body__footer main-footer">
+    <footer class="main-footer">
       <p class="main-footer__hashtag">#visitsedona</p>
       <ul class="main-footer__social social">
         <li class="social__item">
@@ -201,6 +204,7 @@
         </li>
       </ul>
       <p class="main-footer__copyright copyright">
+        <span class="copyright__text">Разработано</span>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <svg class="copyright__img" aria-hidden="true" focusable="false" width="27" height="34"
             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
