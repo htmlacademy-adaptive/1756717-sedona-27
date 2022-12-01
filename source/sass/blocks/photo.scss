@@ -1,0 +1,37 @@
+.photo__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.photo__item {
+  padding: 24px 0;
+  border-top: 1px solid $neutral;
+}
+
+.photo__title {
+  margin: 0 0 8px 0;
+  font-weight: 700;
+  color: $black;
+  text-transform: uppercase;
+}
+
+.photo__author {
+  margin: 0;
+}
+
+.photo__count {
+  margin: 0;
+  padding-left: 37px;
+  font-weight: 700;
+  color: $black;
+}
+
+.photo__link {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.photo__info-description {
+  margin-bottom: 11px;
+}

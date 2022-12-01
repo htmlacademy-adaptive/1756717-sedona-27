@@ -1,0 +1,15 @@
+.copyright__text {
+  text-transform: uppercase;
+}
+
+.copyright__link {
+  color: $black;
+
+  &:hover {
+    color: $blue;
+  }
+
+  &:active {
+    color: $grey;
+  }
+}
