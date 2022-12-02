@@ -1,0 +1,101 @@
+.advantages {
+  background-color: $blue;
+}
+
+.advantages__list {
+  position: relative;
+  margin: 0;
+  padding: 37px 0 0 0;
+  list-style: none;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    width: 100%;
+    max-height: 37px;
+    height: 100%;
+    background-image: url("../../img/secondary-mask.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+  }
+}
+
+.advantages__inner-list {
+  margin: 0;
+  padding: 23px 18px 46px 18px;
+  list-style: none;
+  background-color: $white;
+}
+
+.advantages__inner-item {
+  padding: 0 0 0 47px;
+
+  .advantages__title {
+    margin: 0 0 16px 0;
+  }
+}
+
+.advantages__title {
+  margin: 0 0 11px 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: $black;
+  text-transform: uppercase;
+  text-align: center;
+
+  &--theme-light {
+    color: $white;
+  }
+}
+
+.advantages__count {
+  display: block;
+  margin: 0 0 17px 0;
+  text-align: center;
+
+  &--theme-light {
+    color: $white;
+  }
+}
+
+.advantages__description {
+  margin: 0;
+  text-transform: uppercase;
+  text-align: center;
+
+  &--theme-light {
+    color: $white;
+  }
+}
+
+.advantages__img {
+  display: block;
+}
+
+.advantages__info {
+  padding: 37px 18px 37px 18px;
+}
+
+.advantages__item {
+  &--size-xl {
+    background-color: $blue;
+  }
+
+  &--size-s {
+    position: relative;
+    padding: 24px 18px 24px 18px;
+    background-color: $light;
+
+    &:not(:last-child)::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 18px;
+      width: 284px;
+      height: 1px;
+      background-color: $light-grey;
+    }
+  }
+}

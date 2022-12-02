@@ -1,0 +1,25 @@
+.search {
+  padding: 38px 18px 49px 18px;
+}
+
+.search__title {
+  margin: 0 0 24px 0;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  color: $black;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.search__description {
+  margin: 0 0 32px 0;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.search__button {
+  display: inline-block;
+  max-width: 284px;
+  text-decoration: none;
+}
