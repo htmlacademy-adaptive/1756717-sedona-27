@@ -5,7 +5,7 @@
 .advantages__list {
   position: relative;
   margin: 0;
-  padding: 37px 0 0 0;
+  padding: 0;
   list-style: none;
 
   &::before {
@@ -17,6 +17,7 @@
     height: 100%;
     background-image: url("../../img/secondary-mask.svg");
     background-position: 0 0;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
   }
 }
@@ -30,10 +31,6 @@
 
 .advantages__inner-item {
   padding: 0 0 0 47px;
-
-  .advantages__title {
-    margin: 0 0 16px 0;
-  }
 }
 
 .advantages__title {
@@ -47,6 +44,11 @@
 
   &--theme-light {
     color: $white;
+  }
+
+  &--inner {
+    margin: 0 0 16px 0;
+    text-align: left;
   }
 }
 
@@ -68,32 +70,42 @@
   &--theme-light {
     color: $white;
   }
+
+  &--inner {
+    text-align: left;
+  }
 }
 
 .advantages__img {
   display: block;
+  min-height: 256px;
 }
 
-.advantages__info {
-  padding: 37px 18px 37px 18px;
-}
+.advantages__container {
+  padding: 54px 18px 40px 18px;
 
-.advantages__item {
-  &--size-xl {
-    background-color: $blue;
+  &--size-m {
+    padding: 37px 18px;
   }
 
   &--size-s {
-    position: relative;
-    padding: 24px 18px 24px 18px;
+    padding: 24px 18px;
+  }
+}
+
+.advantages__item {
+  position: relative;
+
+  &--secondary {
     background-color: $light;
 
     &:not(:last-child)::before {
       content: "";
       position: absolute;
       bottom: 0;
+      right: 18px;
       left: 18px;
-      width: 284px;
+      width: auto;
       height: 1px;
       background-color: $light-grey;
     }
