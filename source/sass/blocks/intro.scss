@@ -20,14 +20,26 @@
 }
 
 .intro__info {
-  padding: 32px 0 16px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px 18px 16px 18px;
+
+  @media (min-width: $tablet-width) {
+    padding: 48px 124px 56px 124px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 59px 124px 44px 124px;
+  }
 
   &--size-s {
-    padding: 36px 0 28px 0;
+    padding: 36px 18px 28px 18px;
   }
 }
 
 .intro__title {
+  max-width: 260px;
   margin: 0;
   font-weight: 700;
   font-size: 18px;
@@ -35,6 +47,10 @@
   color: $black;
   text-transform: uppercase;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    max-width: 520px;
+  }
 
   &--large-indent {
     margin-bottom: 35px;
@@ -50,7 +66,12 @@
 }
 
 .intro__description {
+  max-width: 284px;
   margin: 0;
   text-transform: uppercase;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    max-width: 520px;
+  }
 }

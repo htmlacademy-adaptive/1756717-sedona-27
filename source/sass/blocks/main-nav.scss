@@ -18,6 +18,10 @@
     justify-content: space-between;
     padding: 0 28px 0 48px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 91px 0 71px;
+  }
 }
 
 .main-nav__item {
@@ -46,7 +50,7 @@
 
 .main-nav__item:nth-child(4n-1) {
   @media (min-width: $tablet-width) {
-    margin-left: 140px;
+    margin-left: 130px;
   }
 }
 

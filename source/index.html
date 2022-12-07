@@ -15,6 +15,7 @@
       <span class="main-header__logo">
         <img class="main-header__logo-img" src="img/logo-sedona.svg" width="185" height="96" alt="Логотип Седоны.">
       </span>
+      <!--У main-nav откуда-то появляются лишние 7px высоты, не смогла найти, почему-->
       <nav class="main-header__nav main-nav">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
@@ -43,50 +44,52 @@
             alt="Добро пожаловать в Седону.">
         </div>
         <div class="intro__info">
-          <h2 class="intro__title intro__title--large-indent">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
-          <p class="intro__description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+          <h2 class="intro__title intro__title--large-indent">Седона — небольшой городок в&nbsp;Аризоне, заслуживающий большего!</h2>
+          <p class="intro__description">Рассмотрим 5 причин, по&nbsp;которым Седона круче, чем&nbsp;Гранд Каньон!</p>
         </div>
       </section>
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества</h2>
         <ul class="advantages__list">
-          <li class="advantages__item">
+          <li class="advantages__item advantages__item--size-xl">
             <div class="advantages__row">
               <div class="advantages__container">
                 <h3 class="advantages__title advantages__title--theme-light">Настоящий городок</h3>
                 <span class="advantages__count advantages__count--theme-light">— №1 —</span>
                 <p class="advantages__description advantages__description--theme-light">Седона не аттракцион
                   для туристов,
-                  там течет своя жизнь</p>
+                  там&nbsp;течет своя жизнь</p>
               </div>
               <img class="advantages__img" src="img/real-town.jpg" width="320" height="260" alt="Дом в Седоне.">
             </div>
             <ul class="advantages__inner-list">
               <li class="advantages__inner-item advantages__inner-item--house">
+                <!--Иконки лучше вставить инлайном?
+                И как им задать разные размеры правильно для разных экранов?-->
                 <h4 class="advantages__title advantages__title--inner">Жилье</h4>
                 <p class="advantages__description advantages__description--inner">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
               </li>
               <li class="advantages__inner-item advantages__inner-item--food">
                 <h4 class="advantages__title advantages__title--inner">Еда</h4>
-                <p class="advantages__description advantages__description--inner">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                <p class="advantages__description advantages__description--inner">Всегда заказывайте фирменный бургер, вы&nbsp;не&nbsp;разочаруетесь!</p>
               </li>
               <li class="advantages__inner-item advantages__inner-item--souvenirs">
                 <h4 class="advantages__title advantages__title--inner">Сувениры</h4>
-                <p class="advantages__description advantages__description--inner">Не только китайского, но и местного производства!
+                <p class="advantages__description advantages__description--inner">Не только китайского,<br class="advantages__break">но и местного производства!
                 </p>
               </li>
             </ul>
           </li>
-          <li class="advantages__item">
+          <li class="advantages__item advantages__item--size-xl">
             <div class="advantages__row">
               <div class="advantages__container advantages__container--size-m">
-                <h3 class="advantages__title advantages__title--theme-light">Там есть мост дьявола</h3>
+                <h3 class="advantages__title advantages__title--theme-light">Там есть мост&nbsp;дьявола</h3>
                 <span class="advantages__count advantages__count--theme-light">— №2 —</span>
                 <p class="advantages__description advantages__description--theme-light">Да, по нему можно
                   пройти! Если вы
                   осмелитесь, конечно</p>
               </div>
-              <img class="advantages__img" src="img/bridge.jpg" width="320" height="260" alt="Вид на мост дьявола.">
+              <img class="advantages__img advantages__img--inverse" src="img/bridge.jpg" width="320" height="260" alt="Вид на мост дьявола.">
             </div>
           </li>
           <li class="advantages__item advantages__container advantages__item--secondary advantages__container--size-s">
@@ -97,7 +100,7 @@
           <li class="advantages__item advantages__container advantages__item--secondary advantages__container--size-s">
             <h3 class="advantages__title">Красивая дорога</h3>
             <span class="advantages__count">— №4 —</span>
-            <p class="advantages__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            <p class="advantages__description advantages__description--special">Ехать в Седону из Лас-Вегаса совсем не&nbsp;скучно!</p>
           </li>
           <li class="advantages__item advantages__container advantages__item--secondary advantages__container--size-s">
             <h3 class="advantages__title">Мало туристов</h3>
@@ -108,7 +111,7 @@
       </section>
       <section class="search">
         <h2 class="search__title">Заинтересовались?</h2>
-        <p class="search__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц
+        <p class="search__description">Укажите предполагаемые даты поездки,<br class="search__break">и мы покажем вам лучшие предложения гостиниц
           в Седоне</p>
         <a class="search__button button" href="#">Найти гостиницу</a>
       </section>
