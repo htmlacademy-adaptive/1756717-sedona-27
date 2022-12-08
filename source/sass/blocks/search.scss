@@ -45,12 +45,9 @@
 
 .search__button {
   display: inline-block;
-  max-width: 284px;
+  width: 100%;
+  max-width: 458px;
   text-decoration: none;
-
-  @media (min-width: $tablet-width) {
-    max-width: 458px;
-  }
 }
 
 .search__break {
