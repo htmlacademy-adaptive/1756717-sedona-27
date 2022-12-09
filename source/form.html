@@ -52,13 +52,8 @@
         <form class="review__form review-form" action="https://echo.htmlacademy.ru/" method="get">
           <div class="review-form__user-info">
             <fieldset class="review-form__group review-form__group--large-indent review-form__group--vertical-decor review-form__group--vertical-decor-left">
-              <!--Как можно выровнять по макету заголовки Представьтесь и Контактная информация?
-              Если делать отдельную обертку, не включающую заголовок - судя по макету, они выравниваются отдельно от полей -
-            то тогда непонятно, как сделать вертикальную декоративную линию, которая заголовок в себя включает-->
               <h3 class="review-form__title">Представьтесь:</h3>
               <div class="review-form__item">
-                <!--Если использовать value для инпутов, то применяются стили для инпута без плейсхолдера (активного), не будет соответствия PP.
-                Если убрать стили для инпута без плейсхолдера, то не будет выполняться стайлгайд-->
                 <label class="review-form__label" for="user-name">Имя*:</label>
                 <input class="review-form__input input" type="text" id="user-name" name="user-name"
                   placeholder="Введите имя" value="Пётр" required>
@@ -93,7 +88,9 @@
             </fieldset>
           </div>
           <fieldset class="review-form__group review-form__group--small-indent">
-            <h3 class="review-form__title review-form__title--horizontal-decor">Ваше общее впечатление:</h3>
+            <div class="review-form__horizontal-decor">
+              <h3 class="review-form__title review-form__title--horizontal-decor">Ваше общее впечатление:</h3>
+            </div>
             <ul class="review-form__list review-form__list--radio">
               <li class="review-form__item">
                 <label class="review-form__control">
@@ -122,7 +119,9 @@
             </ul>
           </fieldset>
           <fieldset class="review-form__group review-form__group--small-indent">
-            <h3 class="review-form__title review-form__title--horizontal-decor">Посещенные<br>достопримечательности:</h3>
+            <div class="review-form__horizontal-decor">
+              <h3 class="review-form__title review-form__title--horizontal-decor">Посещенные<br>достопримечательности:</h3>
+            </div>
             <ul class="review-form__list review-form__list--checkbox">
               <li class="review-form__item">
                 <label class="review-form__control">
@@ -159,15 +158,14 @@
             </ul>
           </fieldset>
           <div class="review-form__group">
-            <label class="review-form__title review-form__title--horizontal-decor" for="emotion">Опишите свои эмоции:</label>
+            <div class="review-form__horizontal-decor">
+              <label class="review-form__title review-form__title--horizontal-decor" for="emotion">Опишите свои эмоции:</label>
+            </div>
             <div class="review-form__item">
               <textarea class="review-form__input review-form__input--textarea input" id="emotion" name="emotion" rows="5"
                 placeholder="Опишите подробно все свои восторги"></textarea>
             </div>
           </div>
-          <!--Не получается нормально позиционировать при переходе от планшета к десктопу
-             (по брейкопонтам по макету получается, а когда растягиваю, мешают паддинги у review-form__submit, кнопка и текст получаются меньше
-             по максимальной ширине, чем textarea). А убрать паддинги на планшетной ширине тоже не получится, потому что тогда на 768px кнопка прилипает к левому краю-->
           <div class="review-form__submit">
             <button class="review-form__button button" type="submit">Отправить отзыв</button>
             <p class="review-form__comment">* — обязательные поля</p>

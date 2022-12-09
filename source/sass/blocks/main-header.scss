@@ -7,7 +7,7 @@
 
 .main-header__logo {
   position: relative;
-  display: block;
+  display: flex;
   justify-self: center;
   grid-row: 1/-1;
   grid-column: 1/-1;
