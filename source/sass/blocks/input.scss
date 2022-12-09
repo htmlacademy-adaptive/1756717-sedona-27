@@ -16,8 +16,7 @@
     background-color: $neutral;
   }
 
-  &:active,
-  &:not(:placeholder-shown) {
+  &:active {
     background-color: $white;
     border-color: $neutral;
     outline: none;

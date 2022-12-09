@@ -7,10 +7,22 @@
     0 0;
   background-repeat: no-repeat;
 
+  @media (min-width: $tablet-width) {
+    padding: 78px 0 90px 0;
+  }
+
   &--size-s {
     padding: 52px 0 67px 0;
     background-image: url("../../img/primary-mask-size-s.svg"),
       url("../../img/background-intro-size-s.jpg");
+
+    @media (min-width: $tablet-width) {
+      padding: 95px 0 117px 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 101px 0 120px 0;
+    }
   }
 }
 
@@ -20,14 +32,34 @@
 }
 
 .intro__info {
-  padding: 32px 0 16px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px 18px 16px 18px;
+
+  @media (min-width: $tablet-width) {
+    padding: 48px 18px 56px 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 59px 18px 44px 18px;
+  }
 
   &--size-s {
-    padding: 36px 0 28px 0;
+    padding: 36px 18px 28px 18px;
+
+    @media (min-width: $tablet-width) {
+      padding: 64px 18px 102px 18px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 115px 18px 67px 18px;
+    }
   }
 }
 
 .intro__title {
+  max-width: 260px;
   margin: 0;
   font-weight: 700;
   font-size: 18px;
@@ -36,21 +68,48 @@
   text-transform: uppercase;
   text-align: center;
 
+  @media (min-width: $tablet-width) {
+    max-width: 520px;
+  }
+
   &--large-indent {
     margin-bottom: 35px;
   }
 
   &--medium-indent {
     margin-bottom: 24px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 30px;
+      line-height: 30px;
+      margin-bottom: 30px;
+    }
   }
 
   &--small-indent {
     margin-bottom: 16px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 30px;
+      line-height: 30px;
+      margin-bottom: 20px;
+    }
   }
 }
 
 .intro__description {
+  max-width: 284px;
   margin: 0;
   text-transform: uppercase;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    max-width: 520px;
+  }
+
+  &--size-s {
+    @media (min-width: $tablet-width) {
+      max-width: 470px;
+    }
+  }
 }
