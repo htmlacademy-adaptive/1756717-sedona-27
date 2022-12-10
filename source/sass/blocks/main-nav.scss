@@ -1,22 +1,23 @@
-.main-nav {
-  background-color: $blue;
-
-  @media (min-width: $tablet-width) {
-    background-color: $white;
-  }
-}
-
 .main-nav__list {
   margin: 0;
   padding: 0;
   list-style: none;
   width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  min-width: $mobile-width;
+  z-index: 2;
+  background-color: $blue;
 
   @media (min-width: $tablet-width) {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 0 28px 0 48px;
+    background-color: $white;
   }
 
   @media (min-width: $desktop-width) {
@@ -128,24 +129,95 @@
   right: 18px;
   border: none;
   background-color: $transparent;
-  width: 22px;
+  width: 23px;
   height: 22px;
+  padding: 0;
+  cursor: pointer;
+  z-index: 4;
 
-  &::before {
-    content: "";
-    position: absolute;
-    background-color: $white;
-    height: 4px;
-    width: 100%;
-    transform: rotate(45deg);
+  &:hover {
+    &::before,
+    &::after {
+      opacity: 0.6;
+    }
   }
 
-  &::after {
-    content: "";
-    position: absolute;
-    background-color: $white;
-    height: 4px;
-    width: 100%;
-    transform: rotate(-45deg);
+  &:active {
+    &::before,
+    &::after {
+      opacity: 0.3;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.main-nav--closed {
+  .main-nav__toggle {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 23px;
+      height: 4px;
+      background-color: $blue;
+      box-shadow: 0 9px 0 0 $blue,
+        0 18px 0 0 $blue;
+    }
+  }
+
+  .main-nav__item {
+    @media (max-width: $mobile-width-only) {
+      display: none;
+    }
+  }
+}
+
+.main-nav--opened {
+  .main-nav__toggle {
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 11px;
+      right: 0;
+      background-color: $white;
+      height: 4px;
+      width: 28px;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+.main-nav--nojs {
+  .main-nav__toggle {
+    @media (max-width: $mobile-width-only) {
+      display: none;
+    }
+  }
+
+  .main-nav__list {
+    @media (max-width: $mobile-width-only) {
+      position: relative;
+      min-height: 0;
+      margin-top: -56px;
+      z-index: 3;
+    }
+  }
+
+  .main-nav__item {
+    @media (max-width: $mobile-width-only) {
+      display: block;
+    }
   }
 }
