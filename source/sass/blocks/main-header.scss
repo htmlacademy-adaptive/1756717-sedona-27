@@ -20,17 +20,13 @@
 }
 
 .main-header__nav {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  min-width: $mobile-width;
-  z-index: 2;
-
   @media (min-width: $tablet-width) {
-    position: relative;
     grid-row: 1/-1;
     grid-column: 1/-1;
     min-width: $tablet-width;
   }
+}
+
+.main-header__logo-img {
+  max-height: 96px;
 }

@@ -125,7 +125,8 @@
 .review-form__title {
   position: relative;
   display: block;
-  margin: 0 0 20px 0;
+  margin: 0 auto 20px auto;
+  max-width: 260px;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
