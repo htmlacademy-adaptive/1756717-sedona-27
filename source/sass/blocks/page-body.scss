@@ -5,7 +5,7 @@
   font-size: 14px;
   line-height: 21px;
   color: $brown;
-  background-color: $white;
+  background-color: $basic;
 }
 
 .page-body__modal-container {
@@ -29,6 +29,7 @@
   margin: 0 auto;
   display: grid;
   grid-template-rows: min-content 1 fr min-content;
+  background-color: $white;
 
   @media (min-width: 1200px) {
     box-shadow: 0 5px 15px rgba($darkest-grey, 0.2);

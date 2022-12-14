@@ -16,7 +16,7 @@
     background-color: $neutral;
   }
 
-  &:active {
+  &:focus {
     background-color: $white;
     border-color: $neutral;
     outline: none;
