@@ -315,6 +315,10 @@
   background-color: $basic-grey;
 }
 
+.review-form__control-input:focus + .review-form__control-mark {
+  outline: 2px solid $black;
+}
+
 .review-form__control-input--radio + .review-form__control-mark {
   border-radius: 50%;
 }

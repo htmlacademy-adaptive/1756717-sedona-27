@@ -5,6 +5,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Седона - главная страница</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <link href="css/style.css" rel="stylesheet">
 </head>
 
@@ -58,7 +62,11 @@
                   для туристов,
                   там&nbsp;течет своя жизнь</p>
               </div>
-              <img class="advantages__img" src="img/real-town.jpg" width="320" height="260" alt="Дом в Седоне.">
+              <picture>
+                <source media="(min-width: 1280px)" srcset="img/photo-city-desktop@1x.jpg 1x, img/photo-city-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-city-tablet@1x.jpg 1x, img/photo-city-tablet@2x.jpg 2x">
+                <img class="advantages__img" src="img/photo-city-mobile@1x.jpg" srcset="img/photo-city-mobile@1x.jpg 1x, img/photo-city-mobile@2x.jpg 2x" width="320" height="260" alt="Дом в Седоне.">
+              </picture>
             </div>
             <ul class="advantages__inner-list">
               <li class="advantages__inner-item advantages__inner-item--house">
@@ -77,7 +85,7 @@
             </ul>
           </li>
           <li class="advantages__item advantages__item--size-xl">
-            <div class="advantages__row">
+            <div class="advantages__row advantages__row--inverse">
               <div class="advantages__container advantages__container--size-m">
                 <h3 class="advantages__title advantages__title--theme-light">Там есть мост&nbsp;дьявола</h3>
                 <span class="advantages__count advantages__count--theme-light">— №2 —</span>
@@ -85,7 +93,11 @@
                   пройти! Если вы
                   осмелитесь, конечно</p>
               </div>
-              <img class="advantages__img advantages__img--inverse" src="img/bridge.jpg" width="320" height="260" alt="Вид на мост дьявола.">
+              <picture>
+                <source media="(min-width: 1280px)" srcset="img/photo-bridge-desktop@1x.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
+                <img class="advantages__img" src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@1x.jpg 1x, img/photo-bridge-mobile@2x.jpg 2x" width="320" height="260" alt="Вид на мост дьявола.">
+              </picture>
             </div>
           </li>
           <li class="advantages__item advantages__container advantages__item--secondary advantages__container--size-s">
