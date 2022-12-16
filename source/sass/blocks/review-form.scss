@@ -253,17 +253,20 @@
 .review-form__button {
   margin: 0 auto 3px auto;
   width: 100%;
-  max-width: 324px;
 
   @media (min-width: $tablet-width) {
     margin: 0;
+    max-width: 324px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 384px;
   }
 }
 
 .review-form__submit {
   display: flex;
   flex-direction: column;
-  max-width: 324px;
   margin: 0 auto 24px auto;
   padding: 0 18px;
 
@@ -271,7 +274,6 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    max-width: none;
     margin: 0 auto 64px auto;
     padding: 0 60px;
   }
