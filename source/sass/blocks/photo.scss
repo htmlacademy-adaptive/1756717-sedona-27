@@ -7,12 +7,12 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding: 0 60px;
-    margin-bottom: 58px;
+    margin-bottom: 38px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(3, 1fr);
-    margin-bottom: 62px;
+    margin-bottom: 42px;
     padding: 0;
   }
 }
@@ -53,7 +53,7 @@
 }
 
 .photo__title {
-  margin: 0 0 8px 0;
+  margin: 0 0 3px 0;
   font-weight: 700;
   color: $black;
   text-transform: uppercase;
@@ -64,7 +64,7 @@
 }
 
 .photo__author {
-  margin: 0;
+  margin: 0 0 15px 0;
 
   @media (min-width: $desktop-width) {
     color: $white;
@@ -85,6 +85,10 @@
 .photo__count-img {
   margin: -3px 14px 0 0;
   opacity: 0.3;
+
+  @media (min-width: $tablet-width) {
+    margin: -3px 10px 0 0;
+  }
 
   @media (min-width: $desktop-width) {
     opacity: 1;
@@ -135,13 +139,22 @@
     justify-content: space-between;
     align-items: center;
     min-height: 80px;
-    padding: 22px 20px 15px 20px;
+    padding: 22px 20px 0 20px;
+    margin-bottom: -2px;
   }
 
   @media (min-width: $desktop-width) {
     grid-column: 1 / -1;
     grid-row: 1 / -1;
     align-self: end;
+    padding: 22px 20px 0 24px;
     background-color: rgba($black, 0.3);
+  }
+}
+
+.photo__info-count {
+  @media (min-width: $tablet-width) {
+    margin: 10px 0 0 0;
+    align-self: start;
   }
 }

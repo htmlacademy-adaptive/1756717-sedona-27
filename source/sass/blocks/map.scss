@@ -5,5 +5,10 @@
 .map__frame {
   display: block;
   width: 100%;
+  margin-bottom: 12px;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
