@@ -1,69 +1,69 @@
 .intro__img-wrapper {
   padding: 90px 0 85px 0;
-  background-image: url("../../img/primary-mask-desktop.svg"),
-    url("../../img/background-intro-mobile@1x.jpg");
+  background-image: url("../img/primary-mask-desktop.svg"),
+    url("../img/background-intro-mobile@1x.jpg");
   background-size: 1200px 57px, cover;
   background-position: 50% bottom, center;
   background-repeat: no-repeat;
   background-color: $brown;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../../img/primary-mask-desktop.svg"),
-      url("../../img/background-intro-mobile@2x.jpg");
+    background-image: url("../img/primary-mask-desktop.svg"),
+      url("../img/background-intro-mobile@2x.jpg");
   }
 
   @media (min-width: $tablet-width) {
     padding: 78px 0 90px 0;
-    background-image: url("../../img/primary-mask-desktop.svg"),
-      url("../../img/background-intro-tablet@1x.jpg");
+    background-image: url("../img/primary-mask-desktop.svg"),
+      url("../img/background-intro-tablet@1x.jpg");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/primary-mask-desktop.svg"),
-        url("../../img/background-intro-tablet@2x.jpg");
+      background-image: url("../img/primary-mask-desktop.svg"),
+        url("../img/background-intro-tablet@2x.jpg");
     }
   }
 
   @media (min-width: $desktop-width) {
-    background-image: url("../../img/primary-mask-desktop.svg"),
-      url("../../img/background-intro-desktop@1x.jpg");
+    background-image: url("../img/primary-mask-desktop.svg"),
+      url("../img/background-intro-desktop@1x.jpg");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/primary-mask-desktop.svg"),
-        url("../../img/background-intro-desktop@2x.jpg");
+      background-image: url("../img/primary-mask-desktop.svg"),
+        url("../img/background-intro-desktop@2x.jpg");
     }
   }
 
   &--size-s {
     padding: 52px 0 67px 0;
-    background-image: url("../../img/primary-mask-desktop.svg"),
-      url("../../img/background-intro-size-s-mobile@1x.jpg");
+    background-image: url("../img/primary-mask-desktop.svg"),
+      url("../img/background-intro-size-s-mobile@1x.jpg");
     background-size: 1200px 57px, cover;
     background-position: 50% bottom, center bottom;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/primary-mask-desktop.svg"),
-        url("../../img/background-intro-size-s-mobile@2x.jpg");
+      background-image: url("../img/primary-mask-desktop.svg"),
+        url("../img/background-intro-size-s-mobile@2x.jpg");
     }
 
     @media (min-width: $tablet-width) {
       padding: 95px 0 117px 0;
-      background-image: url("../../img/primary-mask-desktop.svg"),
-        url("../../img/background-intro-size-s-tablet@1x.jpg");
+      background-image: url("../img/primary-mask-desktop.svg"),
+        url("../img/background-intro-size-s-tablet@1x.jpg");
 
       @media (min-resolution: 2dppx) {
-        background-image: url("../../img/primary-mask-desktop.svg"),
-          url("../../img/background-intro-size-s-tablet@2x.jpg");
+        background-image: url("../img/primary-mask-desktop.svg"),
+          url("../img/background-intro-size-s-tablet@2x.jpg");
       }
     }
 
     @media (min-width: $desktop-width) {
       padding: 101px 0 120px 0;
-      background-image: url("../../img/primary-mask-desktop.svg"),
-        url("../../img/background-intro-size-s-desktop@1x.jpg");
+      background-image: url("../img/primary-mask-desktop.svg"),
+        url("../img/background-intro-size-s-desktop@1x.jpg");
 
       @media (min-resolution: 2dppx) {
-        background-image: url("../../img/primary-mask-desktop.svg"),
-          url("../../img/background-intro-size-s-desktop@2x.jpg");
+        background-image: url("../img/primary-mask-desktop.svg"),
+          url("../img/background-intro-size-s-desktop@2x.jpg");
       }
     }
   }
