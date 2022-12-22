@@ -16,7 +16,7 @@
     width: 100%;
     max-height: 37px;
     height: 100%;
-    background-image: url("../../img/secondary-mask.svg");
+    background-image: url("../img/secondary-mask.svg");
     background-position: 0 0;
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -59,7 +59,7 @@
     flex-direction: column;
     min-height: 330px;
     align-items: center;
-    justify-content: end;
+    justify-content: flex-end;
     padding: 145px 33px 60px 33px;
     background-position: center 60px;
   }
@@ -70,7 +70,7 @@
   }
 
   &--house {
-    background-image: url("../../img/icon-house.svg");
+    background-image: url("../img/icon-house.svg");
 
     @media (min-width: $tablet-width) {
       background-size: 77px 72px;
@@ -82,7 +82,7 @@
   }
 
   &--food {
-    background-image: url("../../img/icon-burger.svg");
+    background-image: url("../img/icon-burger.svg");
 
     @media (min-width: $tablet-width) {
       background-size: 80px 68px;
@@ -96,7 +96,7 @@
   }
 
   &--souvenirs {
-    background-image: url("../../img/icon-souvenir.svg");
+    background-image: url("../img/icon-souvenir.svg");
 
     @media (min-width: $tablet-width) {
       background-size: 83px 80px;
