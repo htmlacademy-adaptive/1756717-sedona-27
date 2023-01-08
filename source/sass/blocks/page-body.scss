@@ -28,7 +28,7 @@
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
-  grid-template-rows: min-content 1 fr min-content;
+  grid-template-rows: min-content 1fr min-content;
   background-color: $white;
 
   @media (min-width: $desktop-width) {
