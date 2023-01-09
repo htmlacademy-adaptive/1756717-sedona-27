@@ -77,6 +77,11 @@
   font-weight: 700;
   color: $black;
 
+  @media (min-width: $tablet-width) {
+    margin: 10px 0 0 0;
+    align-self: start;
+  }
+
   @media (min-width: $desktop-width) {
     color: $white;
   }
@@ -149,12 +154,5 @@
     align-self: end;
     padding: 22px 20px 0 24px;
     background-color: rgba($black, 0.3);
-  }
-}
-
-.photo__info-count {
-  @media (min-width: $tablet-width) {
-    margin: 10px 0 0 0;
-    align-self: start;
   }
 }
