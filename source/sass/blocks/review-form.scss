@@ -340,6 +340,7 @@
   @media (min-width: $tablet-width) {
     margin-top: 6px;
     font-size: 14px;
+    color: $brown;
   }
 }
 
@@ -359,11 +360,11 @@
   cursor: pointer;
 }
 
-.review-form__control-input:hover + .review-form__control-mark {
+.review-form__control-input:not(:disabled):hover + .review-form__control-mark {
   background-color: $neutral;
 }
 
-.review-form__control-input:active + .review-form__control-mark {
+.review-form__control-input:not(:disabled):active + .review-form__control-mark {
   background-color: $basic-grey;
 }
 
@@ -409,6 +410,20 @@
 
 .review-form__control-input--checkbox:active + .review-form__control-mark::before {
   opacity: 0.3;
+}
+
+.review-form__control-input:disabled + .review-form__control-mark {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.review-form__control-input:disabled + .review-form__control-mark::before {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.review-form__control-input:disabled ~ .review-form__control-description {
+  opacity: 0.6;
 }
 
 .review-form__input-wrapper {
